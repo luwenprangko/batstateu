@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-database-compat.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="srcode" placeholder="2X-XXXXX">
+            <label for="srcode">SR-CODE</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="firstName" placeholder="Juan">
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="middleInitial" placeholder="A.">
+            <label for="middleInitial">Middle Initial</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="lastName" placeholder="Dela Cruz">
+            <label for="lastName">Last Name</label>
+        </div>
+        <div class="d-grid mb-5">
+            <button class="btn btn-primary" type="submit" id="submitButton">SIGN UP</button>
+        </div>
+    </form>
+    <script src="js/reg.js"></script>
+</div>
+
+
+</body>
+</html>
